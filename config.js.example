@@ -1,0 +1,11 @@
+const config = {
+    autoPull: 0
+}
+
+config.repoURLs = [
+    `git@github.com:Acolectiv/env-automation.git`,
+    `git@github.com:unichord-apps/micron-server.git`,
+    `git@github.com:unichord-apps/micron-client.git`
+]
+
+module.exports.config = config;
