@@ -9,7 +9,6 @@ const autoPull = time => {
 
         config.repoURLs.map(url => {
             const str = (url.replace('.git', "").split('/'));
-            console.log(str)
             console.log(`I'm pulling ${str[1]} for you. Keep tight!`);
             exec(`cd ../${str[1]} && git pull ${url}`, (err, stdout, stderr) => {
                 if(err) return new Error(err);
